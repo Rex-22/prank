@@ -1,0 +1,6 @@
+FILE=/tmp/sneez.mp3
+if [ ! -f "$FILE" ]; then
+  wget https://github.com/Rex-22/prank/raw/main/sneez.mp3 -4 -O - > /tmp/sneez.mp3
+fi
+
+alias git='afplay /tmp/sneez.mp3 &; git'
